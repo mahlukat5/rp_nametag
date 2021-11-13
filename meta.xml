@@ -1,0 +1,46 @@
+<meta>
+	<info author="Mahlukat" name="RP Nametag" type="script" version="1" />	
+
+    <script src="ayarlar.lua" type="client" cache="false"/>
+    <script src="c_nametags.lua" type="client" cache="false"/>
+
+    <file src="fonts/Roboto.ttf" />
+	
+    <file src="samp/3rdParty_Developer.png" /> <file src="samp/a1_on.png" />
+    <file src="samp/a2_on.png" /> <file src="samp/a3_on.png" />
+    <file src="samp/a4_on.png" /> <file src="samp/admin.png" />
+    <file src="samp/afk.png" /> <file src="samp/armour.png" />
+    <file src="samp/auto.png" /> <file src="samp/autopark.png" />
+    <file src="samp/avukatlikDurumu.png" /> <file src="samp/badge1.png" />
+    <file src="samp/bandana.png" /> <file src="samp/bikerhelmet.png" />
+    <file src="samp/bleeding.png" /><file src="samp/blindfold.png" />
+    <file src="samp/boathandbrake.png" /><file src="samp/carlock.png" />
+    <file src="samp/cc.png" /><file src="samp/chat.png" />
+    <file src="samp/cigarette.png" /><file src="samp/developeradm.png" />
+    <file src="samp/dglock.png" /><file src="samp/donatorEtiketi1.png" />
+    <file src="samp/donatorEtiketi2.png" /><file src="samp/donatorEtiketi3.png" />
+    <file src="samp/engine.png" /><file src="samp/fuel.png" />
+    <file src="samp/fullfacehelmet.png" /><file src="samp/gasmask.png" />
+    <file src="samp/genelyetkili.png" /><file src="samp/gm.png" />
+    <file src="samp/handcuffs.png" /><file src="samp/head_turning.png" />
+    <file src="samp/headadm.png" /><file src="samp/headlights.png" />
+    <file src="samp/health.png" /><file src="samp/helmet.png" />
+    <file src="samp/injury.png" /><file src="samp/isbasi.png" />
+    <file src="samp/isimetiketleri1.png" /><file src="samp/isimetiketleri2.png" />
+    <file src="samp/isimetiketleri3.png" /><file src="samp/isimetiketleri4.png" />
+    <file src="samp/isimetiketleri5.png" /><file src="samp/isimetiketleri6.png" />
+    <file src="samp/leadadm.png" /><file src="samp/lowhp.png" />
+    <file src="samp/mask.png" /><file src="samp/mdc.png" />
+    <file src="samp/microphone.png" /><file src="samp/minimized.png" />
+    <file src="samp/minimized1.png" /><file src="samp/newplayer.png" />
+    <file src="samp/p_star.png" /><file src="samp/phone.png" />
+    <file src="samp/ping.png" /><file src="samp/rehber.png" />
+    <file src="samp/rehber_on.png" /><file src="samp/seatbelt.png" />
+	<file src="samp/test.png" /><file src="samp/thirst.png" />
+    <file src="samp/trialadm_on.png" /><file src="samp/twitchEtiketi.png" />
+	<file src="samp/udy_on.png" /><file src="samp/vip1.png" />
+    <file src="samp/vip2.png" /><file src="samp/vip3.png" />
+    <file src="samp/vip4.png" /><file src="samp/vip5.png" />
+    <file src="samp/walkingstyle.png" /><file src="samp/window2.png" />
+    <file src="samp/writing.png" /><file src="samp/youtuberEtiketi.png" />
+</meta>
