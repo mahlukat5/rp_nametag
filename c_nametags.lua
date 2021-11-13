@@ -55,7 +55,7 @@ function renderNametags()
 					elseif 	ayarlar.canbar == "yazi" then
 						ypos=ypos+5
 						dxDrawText("HP: ".."%"..health, nx+1, sy+15, nx+nw+1, sy+26,tocolor(0, 0, 0, 255),1, ayarlar.font,"center",nil)
-						dxDrawText("HP: "..getVariableColor(health).."%"..health, nx, sy+14, nx+nw, sy+25,tocolor(0, 255, 0, 255),1, ayarlar.font,"center",nil,false,false,false,true)
+						dxDrawText("HP: "..getVariableColor(health).."%"..health, nx, sy+14, nx+nw, sy+25,ayarlar.canyazirenk,1, ayarlar.font,"center",nil,false,false,false,true)
 					end	
 				end
 				if ayarlar.zirhbar and armour > 0 then
@@ -65,7 +65,7 @@ function renderNametags()
 					elseif 	ayarlar.zirhbar == "yazi" then
 						ypos=ypos+10
 						dxDrawText("ZIRH: ".."%"..armour, nx+1, sy+28, nx+nw+1, sy+26,tocolor(0, 0, 0, 255),1, ayarlar.font,"center",nil)
-						dxDrawText("ZIRH: "..getVariableColorArmor(armour).."%"..armour, nx, sy+27, nx+nw, sy+25,tocolor(61, 55, 54, 255),1, ayarlar.font,"center",nil,false,false,false,true)	
+						dxDrawText("ZIRH: "..getVariableColorArmor(armour).."%"..armour, nx, sy+27, nx+nw, sy+25,ayarlar.zirhyazirenk,1, ayarlar.font,"center",nil,false,false,false,true)	
 					end	
 				end
 				--> İconları diziyoruz
