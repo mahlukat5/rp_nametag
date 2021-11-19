@@ -43,8 +43,6 @@ function renderNametags()
 				--> İconlardan gelen isime göre nametagın uzunluğunu hesaplıyoruz
 				local nw = _dxGetTextWidth(name,ayarlar.textscale,ayarlar.font)
 				local nx = sx  - _mathfloor(nw/2) --> Nametagı ortaladık
-				if badgename then ypos = ypos+15 end -- eğer badge takılıysa iconların Y konumunu 15 arttır
-				
 				--> Can barı ve zırh barını yerleştiriyoruz
 				local health = _mathfloor(getElementHealth(player))
 				local armour = _mathfloor(getPedArmor(player))
@@ -54,7 +52,8 @@ function renderNametags()
 						drawHPBar(sx, sy+16, health, distance)
 					elseif 	ayarlar.canbar == "yazi" then
 						ypos=ypos+5
-						dxDrawText("HP: ".."%"..health, nx+1, sy+15, nx+nw+1, sy+26,tocolor(0, 0, 0, 255),1, ayarlar.font,"center",nil)
+						-- dxDrawText("HP: ".."%"..health, nx+1, sy+15, nx+nw+1, sy+26,tocolor(0, 0, 0, 255),1, ayarlar.font,"center",nil)
+						-- dxDrawText("HP: "..getVariableColor(health).."%"..health, nx, sy+14, nx+nw, sy+25,ayarlar.canyazirenk,1, ayarlar.font,"center",nil,false,false,false,true)
 						dxDrawText("HP: "..getVariableColor(health).."%"..health, nx, sy+14, nx+nw, sy+25,ayarlar.canyazirenk,1, ayarlar.font,"center",nil,false,false,false,true)
 					end	
 				end
@@ -68,6 +67,8 @@ function renderNametags()
 						dxDrawText("ZIRH: "..getVariableColorArmor(armour).."%"..armour, nx, sy+27, nx+nw, sy+25,ayarlar.zirhyazirenk,1, ayarlar.font,"center",nil,false,false,false,true)	
 					end	
 				end
+				
+				
 				--> İconları diziyoruz
 				local expectedIcons = _mathmin(#icons, ayarlar.icons.maxIconsPerLine)
 				local iconsThisLine,offset = 0,10 * expectedIcons
@@ -83,6 +84,7 @@ function renderNametags()
 					end
 				end
 				--> İsimi yazdırıyoruz
+				if badgename then sy = sy-15 end
 				dxDrawText(name, nx+1, sy+1, nx+nw+1, sy+21,ayarlar.golge,ayarlar.textscale, ayarlar.font,"center")
 				dxDrawText(name, nx, sy, nx+nw, sy+20,tocolor(r, g, b, 255),ayarlar.textscale, ayarlar.font,"center")
 				if extras["ulke"] then
@@ -251,7 +253,7 @@ function initStuff(res)
 			if ayarlar.bandanalar[value[5]] then
 				bandanas[value[5]] = true
 			end
-			datanames[value[5]]=true
+			datanames[value[1]]=true
 		end
 		
 		masks = exports[ayarlar.items]:getMasks()
