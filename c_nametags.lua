@@ -52,8 +52,7 @@ function renderNametags()
 						drawHPBar(sx, sy+16, health, distance)
 					elseif 	ayarlar.canbar == "yazi" then
 						ypos=ypos+5
-						-- dxDrawText("HP: ".."%"..health, nx+1, sy+15, nx+nw+1, sy+26,tocolor(0, 0, 0, 255),1, ayarlar.font,"center",nil)
-						-- dxDrawText("HP: "..getVariableColor(health).."%"..health, nx, sy+14, nx+nw, sy+25,ayarlar.canyazirenk,1, ayarlar.font,"center",nil,false,false,false,true)
+						dxDrawText("HP: ".."%"..health, nx+1, sy+15, nx+nw+1, sy+26,tocolor(0, 0, 0, 255),1, ayarlar.font,"center",nil)
 						dxDrawText("HP: "..getVariableColor(health).."%"..health, nx, sy+14, nx+nw, sy+25,ayarlar.canyazirenk,1, ayarlar.font,"center",nil,false,false,false,true)
 					end	
 				end
@@ -67,8 +66,6 @@ function renderNametags()
 						dxDrawText("ZIRH: "..getVariableColorArmor(armour).."%"..armour, nx, sy+27, nx+nw, sy+25,ayarlar.zirhyazirenk,1, ayarlar.font,"center",nil,false,false,false,true)	
 					end	
 				end
-				
-				
 				--> İconları diziyoruz
 				local expectedIcons = _mathmin(#icons, ayarlar.icons.maxIconsPerLine)
 				local iconsThisLine,offset = 0,10 * expectedIcons
