@@ -297,6 +297,16 @@ addEventHandler("onClientElementStreamIn",root,function()
 		updateIcons(source) 
 	end
 end)
+addEventHandler("onClientVehicleExit", root,function(oyuncu, seat)
+	if isElementStreamedIn(oyuncu) then
+        	updateIcons(oyuncu) 
+	end
+end)
+addEventHandler("onClientVehicleEnter", root,function(oyuncu, seat)
+	if isElementStreamedIn(oyuncu) then
+        	updateIcons(oyuncu) 
+	end
+end)
 function updateIcons(oyuncu)
 	local id = _getElementData(oyuncu, "playerid")
 	if not id then return end
