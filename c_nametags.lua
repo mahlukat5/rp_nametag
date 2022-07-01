@@ -297,14 +297,17 @@ addEventHandler("onClientElementStreamIn",root,function()
 		updateIcons(source) 
 	end
 end)
+addEventHandler("onClientPlayerChangeNick",root,function()
+	updateIcons(source) 
+end)
 addEventHandler("onClientVehicleExit", root,function(oyuncu, seat)
 	if isElementStreamedIn(oyuncu) then
-        	updateIcons(oyuncu) 
+		updateIcons(oyuncu) 
 	end
 end)
 addEventHandler("onClientVehicleEnter", root,function(oyuncu, seat)
 	if isElementStreamedIn(oyuncu) then
-        	updateIcons(oyuncu) 
+		updateIcons(oyuncu) 
 	end
 end)
 function updateIcons(oyuncu)
